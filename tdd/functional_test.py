@@ -10,7 +10,8 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_page_title(self):
         self.driver.get('http://localhost:8000')
-        self.assertIn('Django', self.driver.title)
+        self.assertIn('To-Do', self.driver.title)
+        self.fail('Failed Test')
 
 
 if __name__ == '__main__':
